@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Web Deisgn | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+   
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight"><img src="./img/logo.png" height="40"></span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="about.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Website</h1>
+        <form>
+          <input type="email" placeholder="Enter Email...">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+      
+    </section>
+    <section id="showcase">
+      <div class="container">
+       <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="./img/slid1.png" height="290" width="1000">
+  <div class="text">MAHARASHTRA</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="./img/slid2.png" height="290" width="1000">
+  <div class="text">RAJSTHAN</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="./img/slid3.png" height="290" width="1000">
+  <div class="text">KERALA</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="./img/slid44.png" height="290" width="1000">
+  <div class="text">TAMILNADU</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="./img/slid55.png" height="290" width="1000">
+  <div class="text">CHATTISGADH</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        <h1> TRAVEL AND TOURISM</h1>
+        <p>Travel and tourism is the largest service industry in India. It provides heritage, cultural, medical, business and sports tourism. </p>
+      </div>
+      
+    </section>
+
+    
+
+   
+<footer>
+   
+      
+       <section id="boxes">
+      <div class="container">
+        <div class="box">
+         
+          <h3>NAME</h3>
+          <p>HIMANSHU PAL</p>
+        </div>
+         <div class="box">
+          <h3>CONTACT NO.</h3>
+          <p>8080468357</p>
+       </div>
+        <div class="box">
+          <h3>ADDRESS</h3>
+          <p>Lokmanya nagar pada no.3 jhanjha nagar room no.499, Thane(w) 400606 MAHARASHTRA</p>
+      </div>
+      </div>
+</section>
+<div>
+<nav>
+<ul>
+
+<a href="https://www.instagram.com/?hl=en"><img src="./img/insta.png" height="50" width="50"> 
+<a href="https://www.facebook.com/"><img src="./img/facebook.png" height="50" width="50">
+<a href="https://youtube.com/?lang=en"><img src="./img/youtube.png" height="50" width="50"> 
+<a href="https://twitter.com/?lang=en"><img src="./img/twitter.png" height="50" width="50">
+<a href="https://google.com/?lang=en"><img src="./img/google-plus.png" height="50" width="50">
+</ul>
+</nav>
+</div>
+
+    </footer>
+  </body>
+</html>
